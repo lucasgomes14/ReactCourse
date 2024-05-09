@@ -1,11 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = "Lucas"
+
+  const newName = name.toUpperCase()
+
+  function sum(a, b) {
+    return a + b
+  }
+
+  const url = "https://via.placeholder.com/150"
+
   return (
     <div className="App">
-      <h1>Olá mundo</h1>
-      <p>primeira aula de react</p>
+      <h1>Alterando JSX</h1>
+      <p>Olá, {name}</p>
+      <p>Olá, {newName}</p>
+      <p>Soma: {sum(2, 1)}</p>
+      <img src={url} alt="Minha imagem" />
+      <img src={url} alt="Minha imagem" />
     </div>
   );
 }
